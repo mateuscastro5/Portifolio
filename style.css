@@ -1,0 +1,239 @@
+
+.name{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 140px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(400px);
+    animation: fadeIn 3s;
+}
+.occupation{
+    font-family: "Kanit";
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    transform: translateY(450px);
+    animation: fadeIn 3s;
+}
+.flag{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(600px);
+    width: 3%;
+    height: 3%;
+    border-radius: 5px;
+    animation: fadeIn 4s;
+    box-shadow: 0px 0px 10px;
+}
+section{
+    margin: 50px;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+hr{
+    animation: fadeIn 3s;
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(9, 84, 132), rgba(0, 0, 0, 0));
+}
+
+
+.title-study{
+    animation: fadeIn 8s;
+    font-size: 50px;
+    font-family: "Kanit";
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-350px);
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: fit-content;
+    gap: 30%;
+    transform: translateY(-300px);
+}
+img{
+    width: 170px;
+    height: 170px;
+}
+.logosesi{
+    object-fit: scale-down;
+}
+
+.logo{
+    box-shadow: 5px 5px 10px;
+    border-radius: 30px;
+    position: relative;
+}
+.logo:nth-child(2){
+    transition-delay: 200ms;
+}
+.logo:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.box{ 
+    width: fit-content;
+    background: navy;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    position: absolute;
+    transform: translateX(-350px);
+    box-shadow: 5px 5px 10px;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.box:hover{
+    scale: 1.2;
+}
+.box-text{
+    color: white;
+    font-size: 30px;
+    font-family: "Kanit";
+    text-align: justify;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 3s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.title-about-me{
+    animation: fadeIn 8s;
+    font-size: 50px;
+    font-family: "Kanit";
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-150px);
+}
+.photo-me{
+    width: 65%;
+    height: 65%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px navy;
+    transform: translateX(-400px);
+    transition: 1s;
+}
+.photo-me:hover{
+    box-shadow: 0px 0px 30px navy;
+}
+.bottom-box{
+    width: 500px;
+    background: navy;
+    padding: 25px;
+    display:block;
+    border-radius: 30px;
+    position:absolute;
+    box-shadow: 5px 5px 10px;
+    justify-content: right;
+    align-items: right;
+    transform: translateX(300px);
+    transition: 1s;
+}
+.bottom-box:hover{
+    scale: 1.2;
+}
+.bottom-box-text{
+    color: white;
+    font-size: 30px;
+    font-family: "Kanit";
+    text-align: justify;
+}
+.icons{
+    transform: translate(-500px, 100px);
+    transition: 3s;
+}
+.fa-brands{
+    font-size: 130px;
+    padding: 10px;
+    transition: 1s;
+}
+
+.footer-icons{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.fa-instagram .fa-linkedin{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.fa-instagram:hover{
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+.fa-linkedin:hover{
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+}
+.fa-html5{
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+}
+.fa-css3-alt{
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+}
+.fa-js{
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media(prefers-reduced-animation) {
+    .hidden {
+        transition: none;
+    }
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
